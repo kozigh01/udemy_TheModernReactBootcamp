@@ -1,9 +1,10 @@
 class Hello extends React.Component {
+  static defaultProps = { from: 'Anonymous' };
+  
   render () {
-    const {from, to} = this.props;
     return (
       <React.Fragment>
-        <h1>Hi {from} from {this.props.to}!</h1>
+        <h1>Hi {this.props.from} from {this.props.to}!</h1>
       </React.Fragment>
     );
   }

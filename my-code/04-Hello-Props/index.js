@@ -3,6 +3,7 @@ class App extends React.Component {
     return (
       <div>
         <Hello from="Mark" to="Stacey" />
+        <Hello to="Mark" />
         <NumPicker />
       </div>
     );
